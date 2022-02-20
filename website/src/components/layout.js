@@ -25,25 +25,41 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <div
           style={{
-            marginTop: `2rem`,
+            border: `5px solid white`,
+            background: "#28292c",
+            height:  `auto`,
+            paddingBottom: `150px`,
+            color: `#DFE3E6`,
+            fontFamily:`Lucida Grande`
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+          <main
+            style={{
+              background: "#28292c",
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `15px 15px`,
+              border: `5px solid brown`
+            }}
+          >{children}</main>
+          <footer
+            style={{
+              background: "#28292c",
+              margin: `0 auto`,
+              maxWidth: 960,
+              fontFamily: `Lucida Grande`,
+
+              border: `5px solid purple`
+            }}
+          >
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a style={{ color: '#3B9DDD' }} href="https://www.gatsbyjs.com">Gatsby</a>
+          </footer>
+        </div>
     </>
   )
 }

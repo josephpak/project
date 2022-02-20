@@ -6,7 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout
+  >
     <Seo title="Home" />
     <h1>New Header</h1>
     <p>Add a secondary Header.</p>
@@ -19,10 +20,16 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
+    <p
+      style={{
+        fontFamily: `Lucida Grande`,
+        fontSize: `15px`,
+    }}
+    >
+      <Link style={{ color: '#3B9DDD' }} to="/page-2/">Go to page 2</Link> <br />
+      <Link style={{ color: '#3B9DDD' }} to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
+      <Link style={{ color: '#3B9DDD' }} to="/using-ssr">Go to "Using SSR"</Link> <br />
+      <Link style={{ color: '#3B9DDD' }} to="/using-dsg">Go to "Using DSG"</Link>
     </p>
   </Layout>
 )
