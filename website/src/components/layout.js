@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         >
           <main
             style={{
-              margin: `50px 20px`,
+              margin: `300px 150px`,
               background: "#28292c",
               border: `5px solid brown`
             }}

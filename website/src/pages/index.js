@@ -12,14 +12,14 @@ const IndexPage = () => (
     <h1>New Header</h1>
     <p>Add a secondary Header.</p>
     <p>Now go build something great.</p>
-    <StaticImage
+    {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
-    />
+    /> */}
     <p
       style={{
         fontFamily: `Lucida Grande`,
