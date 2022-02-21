@@ -1047,6 +1047,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/lora@^4.5.4":
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/lora/-/lora-4.5.4.tgz#152903de2355c2233225f77bab38ff63d32cc258"
+  integrity sha512-ByMEakmlcbKD3t9FsSnVoaL+rWPCjOHTql/EhlBpBkLWXmDtaGFNoTNw3ypR5r1LjthIdpIf2i8LgKtVqhj7dA==
+
 "@fontsource/open-sans@^4.5.5":
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.5.tgz#f42ede921cc807cf7b96896691348d75dafbf70c"
