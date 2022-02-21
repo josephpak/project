@@ -62,9 +62,9 @@ const Layout = ({ children }) => {
               paddingTop: `40px`
           }}
           >
-            <Link style={{ color: '#3B9DDD' }} to="/page-2/">about me</Link> <br />
-            <Link style={{ color: '#3B9DDD' }} to="https://www.linkedin.com/in/josephjpak" target="_blank">linkedin</Link> <br />
-            <Link style={{ color: '#3B9DDD' }} to="mailto:josephpak2014@gmail.com">contact me</Link> <br />
+            <Link to="/page-2/">about me</Link> <br />
+            <Link to="https://www.linkedin.com/in/josephjpak" target="_blank">linkedin</Link> <br />
+            <Link to="mailto:josephpak2014@gmail.com">contact me</Link> <br />
           </p>
         </div>
 
