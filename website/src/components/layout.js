@@ -26,7 +26,8 @@ const Layout = ({ children }) => {
     <>
         <body
           style={{
-            border: `5px solid orange`,
+            // border: `5px solid orange`,            
+            fontFamily: `Lora`,
             display: `flex`,
             background: "#28292c",
             width: `100%`,
@@ -37,9 +38,9 @@ const Layout = ({ children }) => {
         >
           <main
             style={{
-              margin: `300px 150px`,
+              // border: `5px solid brown`              
+              margin: `240px 150px`,
               background: "#28292c",
-              border: `5px solid brown`
             }}
           >{children}</main>
         </body>
