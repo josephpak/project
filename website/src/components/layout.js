@@ -24,40 +24,25 @@ const Layout = ({ children }) => {
 
   return (
     <>
-        <div
+        <body
           style={{
-            border: `5px solid white`,
+            border: `5px solid orange`,
+            display: `flex`,
             background: "#28292c",
-            height:  `auto`,
-            paddingBottom: `150px`,
+            width: `100%`,
+            height:  `100%`,
             color: `#DFE3E6`,
-            fontFamily:`Lucida Grande`
+            flexDirection: `column`
           }}
         >
           <main
             style={{
+              margin: `50px 20px`,
               background: "#28292c",
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `15px 15px`,
               border: `5px solid brown`
             }}
           >{children}</main>
-          <footer
-            style={{
-              background: "#28292c",
-              margin: `0 auto`,
-              maxWidth: 960,
-              fontFamily: `Lucida Grande`,
-
-              border: `5px solid purple`
-            }}
-          >
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a style={{ color: '#3B9DDD' }} href="https://www.gatsbyjs.com">Gatsby</a>
-          </footer>
-        </div>
+        </body>
     </>
   )
 }
