@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
@@ -23,28 +24,52 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-        <body
+    <div
+      style={{
+        fontFamily: `Lora`,
+        color: `#DFE3E6`,
+        width: `100%`,
+        height: `100%`,
+        display: `flex`,
+        flexDirection: `column`,
+      }}
+    >
+      <div
+        style={{
+          display: `flex`,
+          justifyContent: `space-between`,
+          width: `100%`,
+        }}
+      >
+        <p
           style={{
-            // border: `5px solid orange`,            
-            fontFamily: `Lora`,
-            display: `flex`,
-            background: "#28292c",
-            width: `100%`,
-            height:  `100%`,
-            color: `#DFE3E6`,
-            flexDirection: `column`
+            fontSize: `32px`
           }}
-        >
-          <main
+        >Hello!</p>
+        <div>
+          <p
             style={{
-              // border: `5px solid brown`              
-              margin: `240px 150px`,
-              background: "#28292c",
+              width: `500px`,
+              fontSize: `30px`,
             }}
-          >{children}</main>
-        </body>
-    </>
+          >I’m Joe Pak, a product manager and venture capital investor based in San Francisco.</p>
+          <p
+            style={{
+              fontSize: `30px`,
+              display: `flex`,
+              justifyContent: `space-between`,
+              width: `500px`,
+              paddingTop: `40px`
+          }}
+          >
+            <Link style={{ color: '#3B9DDD' }} to="/page-2/">about me</Link> <br />
+            <Link style={{ color: '#3B9DDD' }} to="https://www.linkedin.com/in/josephjpak" target="_blank">linkedin</Link> <br />
+            <Link style={{ color: '#3B9DDD' }} to="mailto:josephpak2014@gmail.com">contact me</Link> <br />
+          </p>
+        </div>
+
+      </div>
+    </div>
   )
 }
 
