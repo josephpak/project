@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
@@ -26,8 +19,6 @@ const Layout = ({ children }) => {
   return (
     <div
       style={{
-        fontFamily: `Lora`,
-        color: `#DFE3E6`,
         width: `100%`,
         height: `100%`,
         display: `flex`,
@@ -35,6 +26,7 @@ const Layout = ({ children }) => {
       }}
     >
       <div
+        className="text-body"
         style={{
           display: `flex`,
           justifyContent: `space-between`,
@@ -48,19 +40,10 @@ const Layout = ({ children }) => {
         >Hello!</p>
         <div>
           <p
-            style={{
-              width: `500px`,
-              fontSize: `30px`,
-            }}
+            className="intro"
           >I’m Joe Pak, a product manager and venture capital investor based in San Francisco.</p>
           <p
-            style={{
-              fontSize: `30px`,
-              display: `flex`,
-              justifyContent: `space-between`,
-              width: `500px`,
-              paddingTop: `40px`
-          }}
+            className="links"
           >
             {/* <Link to="/page-2/">about me</Link> <br /> */}
             <Link to="https://www.linkedin.com/in/josephjpak" target="_blank">linkedin</Link> <br />

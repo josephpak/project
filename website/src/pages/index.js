@@ -2,14 +2,13 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import "@fontsource/lora"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout.js"
 import Seo from "../components/seo"
+import "../components/layout.css"
 
 const IndexPage = () => (
   <div
-    style={{
-    padding: `100px 175px`
-    }}
+    className="main"
   >
     <Layout
     >
