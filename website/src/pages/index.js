@@ -11,12 +11,13 @@ const IndexPage = () => (
   <div
     className="main"
   >
+    <Helmet>
+        <title>Hello!</title>
+    </Helmet>
     <Layout
     >
       <Seo title="Home" />
-      <Helmet>
-        <title>Portfolio</title>
-      </Helmet>
+      
       
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"
