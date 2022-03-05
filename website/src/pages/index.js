@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import "@fontsource/lora"
+import { Helmet } from 'react-helmet';
 
 import Layout from "../components/layout.js"
 import Seo from "../components/seo"
@@ -13,7 +14,9 @@ const IndexPage = () => (
     <Layout
     >
       <Seo title="Home" />
-      
+      <Helmet>
+        <title>Portfolio</title>
+      </Helmet>
       
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"
